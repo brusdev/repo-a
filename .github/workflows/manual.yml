@@ -28,4 +28,4 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: |
-        curl -X POST -H "Accept: application/vnd.github.v3+json"  -H "Authorization: token ${{ secrets.test }}" -d '{"ref":"ref", "name":"brusdev"}' https://api.github.com/repos/brusdev/repo-b/actions/workflows/blank.yml/dispatches
+        curl -X POST -H "Accept: application/vnd.github.v3+json"  -H "Authorization: token ${{ secrets.test }}" -d '{"ref":"ref", "inputs":{"name":"brusdev"}}' https://api.github.com/repos/brusdev/repo-b/actions/workflows/blank.yml/dispatches
