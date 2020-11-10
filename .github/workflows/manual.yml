@@ -30,6 +30,6 @@ jobs:
       run: |
         curl -X POST \
         -H "Accept: application/vnd.github.v3+json" \
-        -H "Authorization: token c569a960d483a30348861722bcba513fcd70270e" \
+        -H "Authorization: token 97342d77434f59d563a20b4d00078765dd6bd256" \
         -d '{"name":"${{ github.event.inputs.name }}"}' \
         https://api.github.com/repos/brusdev/repo-b/actions/workflows/blank.yml/dispatches
