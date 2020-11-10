@@ -29,7 +29,7 @@ jobs:
     - name: Send greeting
       run: |
         curl -X POST \
+        -u brusdev:2c724095b5c7a7b103fc3151a56c5b289df072b6 \
         -H "Accept: application/vnd.github.v3+json" \
-        -H "Authorization: token 97342d77434f59d563a20b4d00078765dd6bd256" \
         -d '{"name":"${{ github.event.inputs.name }}"}' \
         https://api.github.com/repos/brusdev/repo-b/actions/workflows/blank.yml/dispatches
